@@ -62,6 +62,7 @@ class OCRFraudDataset(Dataset):
     """
     Dataset OCR & fraude.
     - Mode train : explore sous-dossiers normal, forgery_1..4 => labels connus
+      même si images sont dans des sous-sous-dossiers.
     - Mode test : explore uniquement images => pas de labels
     """
     def __init__(self, root_dir, transform=None, mode="train"):
@@ -70,20 +71,26 @@ class OCRFraudDataset(Dataset):
         self.mode = mode
         self.records = []
 
+        label_map = {'normal':0,'forgery_1':1,'forgery_2':2,'forgery_3':3,'forgery_4':4}
+
         if self.mode == "train":
-            label_map = {'normal':0,'forgery_1':1,'forgery_2':2,'forgery_3':3,'forgery_4':4}
             for country in self.root_dir.iterdir():
-                if not country.is_dir(): continue
+                if not country.is_dir():
+                    continue
                 for label in label_map.keys():
                     folder = country / label
                     if folder.exists():
-                        for f in list_images(folder):
-                            self.records.append((f, label_map[label]))
+                        # recursively add all images from subfolders
+                        for f in folder.rglob("*"):
+                            if f.suffix.lower() in {'.jpg','.jpeg','.png'}:
+                                self.records.append((str(f), label_map[label]))
         else:  # mode test
             for country in self.root_dir.iterdir():
-                if not country.is_dir(): continue
-                for f in list_images(country):
-                    self.records.append((f, -1))  # -1 => pas de label
+                if not country.is_dir():
+                    continue
+                for f in country.rglob("*"):
+                    if f.suffix.lower() in {'.jpg','.jpeg','.png'}:
+                        self.records.append((str(f), -1))  # -1 => pas de label
 
     def __len__(self):
         return len(self.records)
