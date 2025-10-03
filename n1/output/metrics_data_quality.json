@@ -1,0 +1,108 @@
+{
+  "files": {
+    "clean_file": "n1/output/WPP2024_DEMOGRAPHIC_CLEAN.csv",
+    "anomalies_file": "n1/output/WPP2024_DEMOGRAPHIC_ANOMALIES.csv"
+  },
+  "data_quality": {
+    "rows": 21978,
+    "cols": 10,
+    "missingness_percent_by_column": {
+      "iso3": 20.2020202020202,
+      "region": 0.0,
+      "year": 0.0,
+      "population_total": 0.0,
+      "population_female": 0.0,
+      "population_male": 0.0,
+      "life_expectancy": 0.0,
+      "fertility_rate": 0.0,
+      "birth_rate": 0.0,
+      "death_rate": 0.0
+    },
+    "numeric_summary": {
+      "year": {
+        "count": 21978,
+        "min": 1950.0,
+        "p10": 1957.0,
+        "median": 1986.5,
+        "mean": 1986.5,
+        "p90": 2016.0,
+        "max": 2023.0
+      },
+      "population_total": {
+        "count": 21978,
+        "min": 0.496,
+        "p10": 46.61870000000002,
+        "median": 5376.9475,
+        "mean": 191806.26468996267,
+        "p90": 297479.2956999998,
+        "max": 8091734.93
+      },
+      "population_female": {
+        "count": 21978,
+        "min": 0.259,
+        "p10": 22.93570000000001,
+        "median": 2711.1745,
+        "mean": 95448.27765738466,
+        "p90": 153331.35759999996,
+        "max": 4022383.002
+      },
+      "population_male": {
+        "count": 21978,
+        "min": 0.237,
+        "p10": 23.065100000000005,
+        "median": 2673.5645000000004,
+        "mean": 96357.98703558104,
+        "p90": 145678.23609999995,
+        "max": 4069351.928
+      },
+      "life_expectancy": {
+        "count": 21978,
+        "min": 10.989,
+        "p10": 45.7217,
+        "median": 65.98400000000001,
+        "mean": 63.52479292929293,
+        "p90": 77.0493,
+        "max": 86.372
+      },
+      "fertility_rate": {
+        "count": 21978,
+        "min": 0.662,
+        "p10": 1.62,
+        "median": 3.552,
+        "mean": 3.967404358904359,
+        "p90": 6.722,
+        "max": 8.864
+      },
+      "birth_rate": {
+        "count": 21978,
+        "min": 3.519,
+        "p10": 11.724,
+        "median": 27.741500000000002,
+        "mean": 28.787117208117213,
+        "p90": 46.8743,
+        "max": 58.627
+      },
+      "death_rate": {
+        "count": 21978,
+        "min": 0.841,
+        "p10": 5.663,
+        "median": 9.558,
+        "mean": 11.187151560651559,
+        "p90": 19.736199999999997,
+        "max": 153.963
+      }
+    },
+    "duplicates": {
+      "keys_used": [
+        "iso3",
+        "region"
+      ],
+      "duplicate_count": 21683,
+      "total_rows": 21978
+    }
+  },
+  "anomalies": {
+    "count": 1867,
+    "sample_rows": 20
+  }
+}
