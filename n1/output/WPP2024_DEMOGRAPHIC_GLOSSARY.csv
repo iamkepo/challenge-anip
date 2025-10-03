@@ -1,0 +1,11 @@
+Variable,Description,Unité,Source,Période,Géographie
+iso3,Nom du pays,-,UN WPP 2024,1950-2023,Pays / région / sous-région
+region,Code ISO3 du pays,-,UN WPP 2024,1950-2023,Pays / région / sous-région
+year,Région / sous-région,-,UN WPP 2024,1950-2023,Pays / région / sous-région
+population_total,Année,année,UN WPP 2024,1950-2023,Pays / région / sous-région
+population_female,Population totale (en milliers),milliers de personnes,UN WPP 2024,1950-2023,Pays / région / sous-région
+population_male,Population féminine (en milliers),milliers de personnes,UN WPP 2024,1950-2023,Pays / région / sous-région
+life_expectancy,Population masculine (en milliers),milliers de personnes,UN WPP 2024,1950-2023,Pays / région / sous-région
+fertility_rate,Espérance de vie à la naissance (années),années,UN WPP 2024,1950-2023,Pays / région / sous-région
+birth_rate,Taux de fécondité total (enfants par femme),enfants par femme,UN WPP 2024,1950-2023,Pays / région / sous-région
+death_rate,Taux brut de natalité (pour 1000 habitants),pour 1000 habitants,UN WPP 2024,1950-2023,Pays / région / sous-région

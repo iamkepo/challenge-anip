@@ -1,0 +1,30 @@
+# Requirements for the project
+
+# PyTorch and torchvision
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Image processing
+Pillow>=10.0.0
+
+# Data manipulation
+pandas>=2.0.0
+numpy>=1.27.0
+
+# Machine learning utilities
+scikit-learn>=1.3.0
+
+# Progress bar
+tqdm>=4.66.0
+
+# Optional: Faiss for nearest neighbor search
+faiss-cpu>=1.7.4   # ou faiss-gpu si tu as GPU
+
+# Optional: timm if you want to use alternative backbones
+timm>=0.9.8
+
+# Optional: matplotlib for visualizations
+matplotlib>=3.8.0
+
+# Optional: jupyterlab for interactive notebooks
+jupyterlab>=4.0.0
