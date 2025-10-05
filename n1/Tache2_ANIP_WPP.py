@@ -10,11 +10,11 @@ import os
 # =======================
 # 1️⃣ Chemins
 # =======================
-input_file = "output/WPP2024_DEMOGRAPHIC_CLEAN.csv"
-output_file = "output/WPP2024_DEMOGRAPHIC_ENRICHED.csv"
-anomalies_file = "output/WPP2024_DEMOGRAPHIC_ANOMALIES.csv"
-graphs_dir = "output/graphs"
-os.makedirs("output", exist_ok=True)
+input_file = "outputs/tache1/WPP2024_DEMOGRAPHIC_CLEAN.csv"
+output_file = "outputs/tache2/WPP2024_DEMOGRAPHIC_ENRICHED.csv"
+anomalies_file = "outputs/tache2/WPP2024_DEMOGRAPHIC_ANOMALIES.csv"
+graphs_dir = "outputs/tache2/graphs"
+os.makedirs("outputs/tache2", exist_ok=True)
 os.makedirs(graphs_dir, exist_ok=True)
 
 # =======================

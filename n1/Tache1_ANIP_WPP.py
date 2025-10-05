@@ -7,7 +7,7 @@ import os
 
 # 1️⃣ Chemins
 file_path = "data/WPP2024_GEN_F01_DEMOGRAPHIC_INDICATORS_FULL.xlsx"
-output_dir = "output"
+output_dir = "outputs/tache1"
 os.makedirs(output_dir, exist_ok=True)
 
 # 2️⃣ Lire la feuille 'Estimates' en sautant les lignes d'en-tête inutiles

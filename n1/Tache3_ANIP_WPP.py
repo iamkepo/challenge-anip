@@ -11,8 +11,8 @@ import os
 # =======================
 # 1️⃣ Chemins
 # =======================
-input_file = "output/WPP2024_DEMOGRAPHIC_ENRICHED.csv"
-output_dir = "output/powerbi_full"
+input_file = "outputs/tache2/WPP2024_DEMOGRAPHIC_ENRICHED.csv"
+output_dir = "outputs/tache3"
 graphs_dir = os.path.join(output_dir, "graphs")
 maps_dir = os.path.join(output_dir, "maps")
 os.makedirs(graphs_dir, exist_ok=True)

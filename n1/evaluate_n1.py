@@ -158,9 +158,9 @@ def create_anomalies_sample(df_anom, out_dir, n=200):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--clean', type=Path, default=Path('n1/output/WPP2024_DEMOGRAPHIC_CLEAN.csv'))
-    parser.add_argument('--anomalies', type=Path, default=Path('n1/output/WPP2024_DEMOGRAPHIC_ANOMALIES.csv'))
-    parser.add_argument('--out_dir', type=Path, default=Path('n1/output'))
+    parser.add_argument('--clean', type=Path, default=Path('n1/outputs/tache1/WPP2024_DEMOGRAPHIC_CLEAN.csv'))
+    parser.add_argument('--anomalies', type=Path, default=Path('n1/outputs/tache2/WPP2024_DEMOGRAPHIC_ANOMALIES.csv'))
+    parser.add_argument('--out_dir', type=Path, default=Path('n1/outputs/evaluation/metrics'))
     args = parser.parse_args()
 
     df_clean = load_csv(args.clean)
